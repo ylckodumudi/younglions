@@ -1445,10 +1445,18 @@ h3:before {
   margin-top: 5px;
   background: #fff;
   padding: 20px 0 ;
-
+    -webkit-box-shadow: rgba(51, 45, 49, 0.39) 0px 2px 5px;
+  -moz-box-shadow: rgba(51, 45, 49, 0.39) 0px 2px 5px;
+  box-shadow: rgba(51, 45, 49, 0.39) 0px 2px 5px;
 
 }
-.ComingSoonCard .datefixture {
-font-size: 16px;
+.ComingSoonCard h2 {
+  width: 100%;
+  margin-top: 5px;
+  background: #fff;
+  padding: 20px 0 ;
+    -webkit-box-shadow: rgba(51, 45, 49, 0.39) 0px 2px 5px;
+  -moz-box-shadow: rgba(51, 45, 49, 0.39) 0px 2px 5px;
+  box-shadow: rgba(51, 45, 49, 0.39) 0px 2px 5px;
 
 }

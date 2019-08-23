@@ -1421,6 +1421,7 @@ h3:before {
 .formation .midfield {
   width: 33.333%;
 }
+
 .ComingSoon {
   width:254px;
   margin: 0 auto 8px;
@@ -1433,22 +1434,8 @@ h3:before {
   display: block;
   text-align: center;
   color: rgb(255, 255, 255);
-  padding: 20px 0 0;
+  padding: 20px 0;
   margin-top: 25px;
   box-shadow: rgba(236, 147, 147, 0.5) 2px 4px 10px;
   font-weight: bold;
- 
-}
-
-.ComingSoonCard {
-  width: 100%;
-  margin-top: 5px;
-  background: #fff;
-  padding: 20px 0 ;
-
-
-}
-.ComingSoonCard .datefixture {
-font-size: 16px;
-
 }

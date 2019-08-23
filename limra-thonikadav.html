@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Young Lions Kodumudi</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="description" content="Young Lions Swanthanam Club Kodumudi  ( YLC Kodumudi ) founded in 1996, Mangol Lague is a football tournament orgnizing by Club" />
+  <!-- <meta name="keywords" content="Enter, your, keywords" /> -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reveal.css" />
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+  integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+  crossorigin="anonymous"
+  />
+  <link
+  href="https://fonts.googleapis.com/css?family=Montserrat"
+  rel="stylesheet"
+  type="text/css"
+  />
+  <link
+  href="https://fonts.googleapis.com/css?family=Quicksand:700"
+  rel="stylesheet"
+  type="text/css"
+  />
+</head>
+<body>
+  <div class="loader" id="loader-wrapper">
+    <div class="loader-logo" id="loader-logo">
+      <img src="images/logo.png" />
+    </div>
+    <div class="spinner large" id="loader">
+      <div class="spinner-wrapper">
+        <div class="rotator">
+          <div class="inner-spin"></div>
+          <div class="inner-spin"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <a href="#" class="app-logo">
+      <img src="images/logo.png" />
+      <span class="logo-text"
+      >Mangol<br />
+      League</span
+      >
+    </a>
+    <span class="btn-menu"><img src="images/menu.svg"/></span>
+  </header>
+
+  <nav class="menu block-revealer">
+    <canvas id="world"></canvas>
+    <div class="revealer-content">
+      <span class="btn-close"><img src="images/close.svg"/></span>
+      <ul class="menu-inner">
+        <li class="menu-item">
+          <a class="menu-link" href="https://www.younglions.cf/">Home</a>
+        </li>
+
+        <li class="menu-item">
+          <a class="menu-link" href="fixture.html">Fixture</a>
+        </li>
+
+        <li class="menu-item">
+          <a class="menu-link" href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+    </div>
+    <div class="revealer-animation"></div>
+  </nav>
+  <div class="page-content page ">
+      <!--
+        <div class="banner">
+          <img src="https://media.giphy.com/media/1yVJHj1B1YWw8/giphy.gif">
+        <div class="banner-text">
+          <h1>Mangol Premier<br> League</h1>
+        </div>
+        </div>
+      -->
+
+      <div class="match-statcics">
+        <div class="card">
+          <div class="match-header">
+            <div class="team">
+              <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/9/97/FIGC_logo.svg/706px-FIGC_logo.svg.png"
+              />
+              <h2>ITA</h2>
+            </div>
+            <div class="info">
+              <h1>MATCH STATISTICS</h1>
+              <p>11 September 2015</p>
+            </div>
+            <div class="team">
+              <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/Royal_Netherlands_Football_Association_Logo.svg/300px-Royal_Netherlands_Football_Association_Logo.svg.png"
+              />
+              <h2>NED</h2>
+            </div>
+          </div>
+          <div class="timeline">
+            <div class="score">
+              <h4 class="winner">2</h4>
+              <h4>0</h4>
+            </div>
+            <div class="row">
+              <div class="col fl right">
+                <div class="event">
+                  <span class="fr">Candreva <strong>87'</strong></span>
+                  <img
+                  class="fr goal goal"
+                  src="https://d30y9cdsu7xlg0.cloudfront.net/png/55481-200.png"
+                  />
+                </div>
+                <div class="event">
+                  <span class="fr">Darmian <strong>79'</strong></span>
+                  <img
+                  class="fr"
+                  src="https://placeholdit.imgix.net/~text?txtsize=5&bg=ffde00&txtclr=ffde00&txt=10%C3%9715&w=10&h=15&txtpad=1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col fr">
+                <div class="event">
+                  <span class="fl"><strong>73'</strong> Robben</span>
+                  <img
+                  class="fl"
+                  src="https://placeholdit.imgix.net/~text?txtsize=5&bg=ffde00&txtclr=ffde00&txt=10%C3%9715&w=10&h=15&txtpad=1"
+                  />
+                </div>
+                <div class="event">
+                  <span class="fl"><strong>68'</strong> Blind</span>
+                  <img
+                  class="fl"
+                  src="https://placeholdit.imgix.net/~text?txtsize=5&bg=ffde00&txtclr=ffde00&txt=10%C3%9715&w=10&h=15&txtpad=1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col fl right">
+                <div class="event">
+                  <span class="fr">Verratti <strong>65'</strong></span>
+                  <img
+                  class="fr"
+                  src="https://placeholdit.imgix.net/~text?txtsize=5&bg=ffde00&txtclr=ffde00&txt=10%C3%9715&w=10&h=15&txtpad=1"
+                  />
+                </div>
+                <div class="event">
+                  <span class="fr">Pelle <strong>57'</strong></span>
+                  <img
+                  class="fr goal"
+                  src="https://d30y9cdsu7xlg0.cloudfront.net/png/55481-200.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="match-header">
+            <h1>TEAM FORMATION</h1>
+            <div class="tabs">
+              <a href="#" class="selected">Italy</a> <a href="#">Netherlands</a>
+            </div>
+          </div>
+          <div class="formation">
+            <div class="field">
+              <div class="row">
+                <div class="player">
+                  <img src="https://imgur.com/uEPm1rZ.png" />
+                  <p>Buffon</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="player defense fl">
+                  <img src="https://imgur.com/uEPm1rZ.png" />
+                  <p>Darmian</p>
+                </div>
+                <div class="player defense fl">
+                  <img src="https://imgur.com/uEPm1rZ.png" />
+                  <p>Bonucci</p>
+                </div>
+                <div class="player defense fl">
+                  <img src="https://imgur.com/uEPm1rZ.png" />
+                  <p>Chiellini</p>
+                </div>
+                <div class="player defense fl">
+                  <img src="https://imgur.com/uEPm1rZ.png" />
+                  <p>De Sciglio</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="player midfield fl">
+                  <img src="https://imgur.com/uEPm1rZ.png" />
+                  <p>Verratti</p>
+                </div>
+                <div class="player midfield fl">
+                  <img src="https://imgur.com/uEPm1rZ.png" />
+                  <p>De Rossi</p>
+                </div>
+                <div class="player midfield fl">
+                  <img src="https://imgur.com/uEPm1rZ.png" />
+                  <p>Parolo</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="player defense fl"></div>
+                <div class="player defense fl">
+                  <img src="https://imgur.com/uEPm1rZ.png" />
+                  <p>Candreva</p>
+                </div>
+                <div class="player defense fl">
+                  <img src="https://imgur.com/uEPm1rZ.png" />
+                  <p>Marchisio</p>
+                </div>
+                <div class="player defense fl"></div>
+              </div>
+              <div class="row">
+                <div class="player">
+                  <img src="https://imgur.com/uEPm1rZ.png" />
+                  <p>Pelle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sponsors">
+        <h5 class="">Sponsored By</h5>
+        <img src="images/sponsors.png" />
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+      //PAGE LOADER//
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("body").addClass("loaded");
+        }, 1800);
+      });
+    </script>
+  </body>
+  </html>

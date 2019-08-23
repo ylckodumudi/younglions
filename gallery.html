@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Young Lions Kodumudi</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="description" content="Young Lions Swanthanam Club Kodumudi  ( YLC Kodumudi ) founded in 1996, Mangol Lague is a football tournament orgnizing by Club" />
+  <!-- <meta name="keywords" content="Enter, your, keywords" /> -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reveal.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+  />
+  <!-- PAGE STYLES -->
+  <link href="css/gallery_scroll.css" rel="stylesheet" type="text/css" />
+  <link href="css/gallery-style.css" rel="stylesheet" type="text/css" />
+  <link href="css/light-gallery.css" rel="stylesheet" type="text/css" />
+  <!-- PAGE STYLES -->
+</head>
+
+<body>
+  <div class="loader" id="loader-wrapper">
+    <div class="loader-logo" id="loader-logo">
+      <img src="images/logo.png" />
+    </div>
+    <div class="spinner large" id="loader">
+      <div class="spinner-wrapper">
+        <div class="rotator">
+          <div class="inner-spin"></div>
+          <div class="inner-spin"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <a href="#" class="app-logo">
+      <img src="images/logo.png" />
+      <span class="logo-text"
+      >Mangol<br />
+      League</span
+      >
+    </a>
+    <span class="btn-menu"><img src="images/menu.svg"/></span>
+  </header>
+
+  <nav class="menu block-revealer">
+    <canvas id="world"></canvas>
+    <div class="revealer-content">
+      <span class="btn-close"><img src="images/close.svg"/></span>
+      <ul class="menu-inner">
+        <li class="menu-item">
+          <a class="menu-link" href="https://www.younglions.cf/">Home</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="fixture.html">Fixture</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+    </div>
+    <div class="revealer-animation"></div>
+  </nav>
+  <div class="page-content page ">
+      <!--
+        <div class="banner">
+          <img src="https://media.giphy.com/media/1yVJHj1B1YWw8/giphy.gif">
+        <div class="banner-text">
+          <h1>Mangol Premier<br> League</h1>
+        </div>
+        </div>
+      -->
+
+      <div class="demo-gallery">
+        <h3>Photo Gallery</h3>
+        <ul id="lightgallery">
+          <li
+          class="a"
+          data-responsive="images/gallery/1.jpg 375, images/gallery/1.jpg 050, images/gallery/1.jpg 800"
+          data-src="images/gallery/1.jpg"
+          >
+          <a href="">
+            <img
+            class="img-responsive ios-shadow"
+            src="images/gallery/thumbs/1.jpg"
+            />
+            <div class="demo-gallery-poster">
+              <img
+              src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png"
+              />
+            </div>
+          </a>
+        </li>
+
+        <li
+        class="a"
+        data-responsive="images/gallery/2.jpg 375, images/gallery/2.jpg 050, images/gallery/2.jpg 800"
+        data-src="images/gallery/2.jpg"
+        >
+        <a href="">
+          <img
+          class="img-responsive ios-shadow"
+          src="images/gallery/thumbs/2.jpg"
+          />
+          <div class="demo-gallery-poster">
+            <img
+            src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png"
+            />
+          </div>
+        </a>
+      </li>
+
+      <li
+      class="a"
+      data-responsive="images/gallery/3.jpg 375, images/gallery/3.jpg 050, images/gallery/3.jpg 800"
+      data-src="images/gallery/3.jpg"
+      >
+      <a href="">
+        <img
+        class="img-responsive ios-shadow"
+        src="images/gallery/thumbs/3.jpg"
+        />
+        <div class="demo-gallery-poster">
+          <img
+          src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png"
+          />
+        </div>
+      </a>
+    </li>
+
+    <li
+    class="a"
+    data-responsive="images/gallery/4.jpg 375, images/gallery/4.jpg 050, images/gallery/4.jpg 800"
+    data-src="images/gallery/4.jpg"
+    >
+    <a href="">
+      <img
+      class="img-responsive ios-shadow"
+      src="images/gallery/thumbs/4.jpg"
+      />
+      <div class="demo-gallery-poster">
+        <img
+        src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png"
+        />
+      </div>
+    </a>
+  </li>
+
+  <li
+  class="a"
+  data-responsive="images/gallery/5.jpg 375, images/gallery/5.jpg 050, images/gallery/5.jpg 800"
+  data-src="images/gallery/5.jpg"
+  >
+  <a href="">
+    <img
+    class="img-responsive ios-shadow"
+    src="images/gallery/thumbs/5.jpg"
+    />
+    <div class="demo-gallery-poster">
+      <img
+      src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png"
+      />
+    </div>
+  </a>
+</li>
+
+<li
+class="a"
+data-responsive="images/gallery/6.jpg 375, images/gallery/6.jpg 050, images/gallery/6.jpg 800"
+data-src="images/gallery/6.jpg"
+>
+<a href="">
+  <img
+  class="img-responsive ios-shadow"
+  src="images/gallery/thumbs/6.jpg"
+  />
+  <div class="demo-gallery-poster">
+    <img
+    src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png"
+    />
+  </div>
+</a>
+</li>
+
+<li
+class="a"
+data-responsive="images/gallery/7.jpg 375, images/gallery/7.jpg 050, images/gallery/7.jpg 800"
+data-src="images/gallery/7.jpg"
+>
+<a href="">
+  <img
+  class="img-responsive ios-shadow"
+  src="images/gallery/thumbs/7.jpg"
+  />
+  <div class="demo-gallery-poster">
+    <img
+    src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png"
+    />
+  </div>
+</a>
+</li>
+
+<li
+class="a"
+data-responsive="images/gallery/8.jpg 375, images/gallery/8.jpg 050, images/gallery/8.jpg 800"
+data-src="images/gallery/8.jpg"
+>
+<a href="">
+  <img
+  class="img-responsive ios-shadow"
+  src="images/gallery/thumbs/8.jpg"
+  />
+  <div class="demo-gallery-poster">
+    <img
+    src="https://sachinchoolur.github.io/lightGallery/static/img/zoom.png"
+    />
+  </div>
+</a>
+</li>
+</ul>
+<div class="clear"></div>
+</div>
+
+<div class="sponsors">
+  <h5 class="">Sponsored By</h5>
+  <img src="images/sponsors.png" />
+</div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131029280-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131029280-1');
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/index.js"></script>
+<script>
+      //PAGE LOADER//
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("body").addClass("loaded");
+        }, 1800);
+      });
+    </script>
+    <script src="js/gallery-comp.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script>
+      (function($) {
+        $(window).on("load", function() {
+          $.mCustomScrollbar.defaults.theme = "light-2"; //set "light-2" as the default theme
+
+          $(".demo-x").mCustomScrollbar({
+            axis: "x",
+            advanced: { autoExpandHorizontalScroll: true }
+          });
+        });
+      })(jQuery);
+    </script>
+    <script>
+      (function() {
+        var imgs = document.getElementsByClassName("ios-shadow"),
+        id = 0;
+        var style = "";
+
+        for (var i = 0, j = imgs.length; i < j; ++i) {
+          var img = imgs[i],
+          src = img.src;
+
+          var container = document.createElement("div");
+          container.className = "ios-shadow-container ios-shadow";
+          container.id = "ios-shadow-" + ++id;
+          img.classList.remove("ios-shadow");
+
+          img.parentNode.insertBefore(container, img);
+          container.appendChild(img);
+
+          style +=
+          "#ios-shadow-" +
+          id +
+          "::after {" +
+          "  background-image: url('" +
+          src +
+          "');" +
+          "  content: '';" +
+          "}";
+        }
+
+        var $style = document.createElement("style");
+        $style.appendChild(document.createTextNode(style));
+        document.head.appendChild($style);
+      })();
+    </script>
+  </body>
+  </html>

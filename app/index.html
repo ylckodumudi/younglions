@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>YOUNG LIONS ANDROID APP</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="stage" class="stage" :class="{'menu-open': menuOpen, 'voices-open': voicesOpen}" :style="{ color: activeReminder.waveFrontColor, backgroundColor: stageBg }" v-cloak>
+ 
+
+  
+  
+  <div class="browser-support" v-if="!supportSpeechSynth">
+    Your browser doesn't <strong>support</strong> speech synthesis.
+  </div>
+  <div class="time">
+    <transition-group name="timer" tag="div">
+      <div v-for="time in timer" class="timer__item" :key="time.id">
+        {{ time.value }}
+      </div>
+    </transition-group>
+  </div>
+  <div class="waves" :style="waveStyles">
+    <div class="wave wave--back" :style="{ color: activeReminder.waveBackColor }">
+      <div class="water">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 32" preserveAspectRatio="none"><title>wave2</title><path d="M350,17.32V32H0V17.32C116.56,65.94,175-39.51,350,17.32Z"/></svg>
+      </div>
+      <div class="water">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 32" preserveAspectRatio="none"><title>wave2</title><path d="M350,17.32V32H0V17.32C116.56,65.94,175-39.51,350,17.32Z"/></svg>
+      </div>
+    </div>
+    <div class="wave wave--front" :style="{ color: activeReminder.waveFrontColor }">
+      <div class="water">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 32" preserveAspectRatio="none"><title>wave2</title><path d="M350,17.32V32H0V17.32C116.56,65.94,175-39.51,350,17.32Z"/></svg>
+      </div>
+      <div class="water">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 32" preserveAspectRatio="none"><title>wave2</title><path d="M350,17.32V32H0V17.32C116.56,65.94,175-39.51,350,17.32Z"/></svg>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <!-- <div class="percent">
+      <transition name="percent-left" mode="out-in">
+        <div :key="percentsLeft">{{ percentsLeft }}</div>
+      </transition>
+      <span>%</span>
+    </div> -->
+  </div>
+  <a href="ylc.apk" class="button">
+           Download
+        </a>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js'></script>
+<script src='https://unpkg.com/vue/dist/vue.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

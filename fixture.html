@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Young Lions Kodumudi</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="description" content="Young Lions Swanthanam Club Kodumudi  ( YLC Kodumudi ) founded in 1996, Mangol Lague is a football tournament orgnizing by Club" />
+  <!-- <meta name="keywords" content="Enter, your, keywords" /> -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reveal.css" />
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+  integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+  crossorigin="anonymous"
+  />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133163603-1"></script>
+
+
+</head>
+<body>
+  <div class="loader" id="loader-wrapper">
+    <div class="loader-logo" id="loader-logo">
+      <img src="images/logo.png" />
+    </div>
+    <div class="spinner large" id="loader">
+      <div class="spinner-wrapper">
+        <div class="rotator">
+          <div class="inner-spin"></div>
+          <div class="inner-spin"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <a href="#" class="app-logo">
+      <img src="images/logo.png" />
+      <span class="logo-text"
+      >Mangol<br />
+      League</span
+      >
+    </a>
+    <span class="btn-menu"><img src="images/menu.svg"/></span>
+  </header>
+
+  <nav class="menu block-revealer">
+    <canvas id="world"></canvas>
+    <div class="revealer-content">
+      <span class="btn-close"><img src="images/close.svg"/></span>
+      <ul class="menu-inner">
+        <li class="menu-item">
+          <a class="menu-link" href="https://www.younglions.cf/">Home</a>
+        </li>
+
+        <li class="menu-item">
+          <a class="menu-link" href="fixture.html">Fixture</a>
+        </li>
+
+        <li class="menu-item">
+          <a class="menu-link" href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+    </div>
+    <div class="revealer-animation"></div>
+  </nav>
+  <div class="page-content page ">
+      <!--
+        <div class="banner">
+          <img src="https://media.giphy.com/media/1yVJHj1B1YWw8/giphy.gif">
+        <div class="banner-text">
+          <h1>Mangol Premier<br> League</h1>
+        </div>
+        </div>
+      -->
+
+      <div class="upcoming-matches-home mar-top-0">
+        <h3>Match Day 1</h3>
+        <span class="datefixture">SUNDAY, NOV 4 2018</span>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Albatrozz</p>
+            <span class="fixture-logo match-day-result">0</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">1</span>
+            <p>Town Team</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Sulthans</p>
+            <span class="fixture-logo match-day-result">1</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">1</span>
+            <p>Limra</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Stark United</p>
+            <span class="fixture-logo match-day-result">1</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">0</span>
+            <p>Thonikadav</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <h3 class="pad-t-20">Match Day 2</h3>
+        <span class="datefixture">SUNDAY, NOV 11 2018</span>
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Albatrozz</p>
+            <span class="fixture-logo match-day-result">2</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">0</span>
+            <p>Stark United</p>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Limra</p>
+            <span class="fixture-logo match-day-result">1</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">3</span>
+            <p>Town Team</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Sulthans</p>
+            <span class="fixture-logo match-day-result">0</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">1</span>
+            <p>Thonikadav</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <h3 class="pad-t-20">Match Day 3</h3>
+        <span class="datefixture">SATURDAY, NOV 17 2018 </span>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Town Team</p>
+            <span class="fixture-logo match-day-result">0</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">1</span>
+            <p>Thonikadav</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Limra</p>
+            <span class="fixture-logo match-day-result">1</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">2</span>
+            <p>Albatrozz</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Stark united</p>
+            <span class="fixture-logo match-day-result">0</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">0</span>
+            <p>Sulthans</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <h3 class="pad-t-20">Match Day 4</h3>
+        <span class="datefixture">SUNDAY, NOV 18 2018</span>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Limra</p>
+            <span class="fixture-logo match-day-result">0</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">2</span>
+
+            <p>Thonikadav</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Stark United</p>
+            <span class="fixture-logo match-day-result">0</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">1</span>
+            <p>Town Team</p>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Albatrozz</p>
+            <span class="fixture-logo match-day-result">1</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">3</span>
+            <p>Sulthans</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+
+        <h3 class="pad-t-20">Match Day 5</h3>
+        <span class="datefixture">SUNDAY, NOV 25 2018</span>
+        <div class="match-fixture-single ">
+          <div class="home-team"><p>Town Team</p> <span class="fixture-logo match-day-result">0</span></div>
+          <div class="away-team"><span class="fixture-logo match-day-result">1</span><p>Sulthans</p></div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team"><p>Albatrozz</p><span class="fixture-logo match-day-result">1</span></div>
+          <div class="away-team"><span class="fixture-logo match-day-result">0</span><p>Thonikadav</p></div>
+          <div class="clear"></div>
+        </div>
+        <div class="match-fixture-single ">
+          <div class="home-team"><p>Stark United</p><span class="fixture-logo match-day-result">1</span></div>
+          <div class="away-team"><span class="fixture-logo match-day-result">0</span><p>Limra</p></div>
+
+          <div class="clear"></div>
+        </div>
+
+
+        <h3 class="pad-t-20">Match Day 6</h3>
+        <span class="datefixture">SUNDAY, DEC 09 2018</span>
+
+        <div class="match-fixture-single ">
+          <div class="home-team"><p>Stark United</p>   <span class="fixture-logo match-day-result">0</span></div>
+          <div class="away-team">   <span class="fixture-logo match-day-result">2</span><p>Thonikadav</p></div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team"><p>Albatrozz</p>   <span class="fixture-logo match-day-result">1</span></div>
+          <div class="away-team">   <span class="fixture-logo match-day-result">0</span><p>Town Team</p></div>
+          <div class="clear"></div>
+        </div>
+        <div class="match-fixture-single ">
+          <div class="home-team"><p>Sulthans</p>   <span class="fixture-logo match-day-result">1</span></div>
+          <div class="away-team">   <span class="fixture-logo match-day-result">0</span><p>Limra</p></div>
+
+          <div class="clear"></div>
+        </div>
+
+        
+
+
+        <h3 class="pad-t-20">Match Day 7</h3>
+        <span class="datefixture">FRIDAY, DEC 14 2018</span>
+
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+
+            <p>Limra</p>
+            <span class="fixture-logo match-day-result">0</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">1</span>
+            <p>Town Team</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Sulthans</p>
+            <span class="fixture-logo match-day-result">0</span>
+
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">2</span>
+            <p>Thonikadav</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Albatrozz</p>
+            <span class="fixture-logo match-day-result">1</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">2</span>
+            <p>Stark United</p>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+
+        
+
+
+
+        <h3 class="pad-t-20">Match Day 8</h3>
+        <span class="datefixture">SUNDAY, DEC 16 2018 </span>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Stark united</p>
+            <span class="fixture-logo match-day-result">0</span>
+
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">0</span>
+            <p>Sulthans</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Limra</p>
+            <span class="fixture-logo match-day-result">2</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">2</span>
+            <p>Albatrozz</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Town Team</p>
+            <span class="fixture-logo match-day-result">0</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">2</span>
+            <p>Thonikadav</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+
+
+
+        <h3 class="pad-t-20">Match Day 9</h3>
+        <span class="datefixture">SUNDAY, DEC 23 2018</span>
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Limra</p>
+            <span class="fixture-logo match-day-result">0</span>
+
+          </div>
+          <div class="away-team">
+
+            <span class="fixture-logo match-day-result">2</span>
+            <p>Thonikadav</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Stark United</p>
+            <span class="fixture-logo match-day-result">0</span>
+
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">1</span>
+            <p>Town Team</p>
+
+          </div>
+
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team">
+            <p>Albatrozz</p>
+            <span class="fixture-logo match-day-result">2</span>
+          </div>
+          <div class="away-team">
+            <span class="fixture-logo match-day-result">2</span>
+            <p>Sulthans</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+
+
+        <h3 class="pad-t-20">Match Day 10</h3>
+        <span class="datefixture">SUNDAY, JAN 06 2019</span>
+        <div class="match-fixture-single ">
+          <div class="home-team"><p>Town Team</p> <span class="fixture-logo match-day-result">1</span></div>
+          <div class="away-team"><span class="fixture-logo match-day-result">2</span><p>Sulthans</p></div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team"><p>Albatrozz</p><span class="fixture-logo match-day-result">0</span></div>
+          <div class="away-team"><span class="fixture-logo match-day-result">2</span><p>Thonikadav</p></div>
+          <div class="clear"></div>
+        </div>
+        <div class="match-fixture-single ">
+          <div class="home-team"><p>Stark United</p><span class="fixture-logo match-day-result">2</span></div>
+          <div class="away-team"><span class="fixture-logo match-day-result">3</span><p>Limra</p></div>
+
+          <div class="clear"></div>
+        </div>
+
+        <div>
+          <br><br>
+          <p style="background-color: #f1f1f1;text-align: center;width: 100%;padding: 10px 0;" class="p">Upcoming Mathes</p>
+          <br>
+        </div>
+
+        <h3 class="pad-t-20">SEMI FINALS</h3>
+        <span class="datefixture">27 JAN 2019(1<sup>st</sup> Leg)</span>
+        <div class="match-fixture-single ">
+          <div class="home-team"><p>Thonikadav</p></div>
+          <div class="away-team"><p>Town Team</p></div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+          <div class="home-team"><p>Sulthans</p></div>
+          <div class="away-team"><p>Albatrozz</p></div>
+          <div class="clear"></div>
+        </div>
+
+        <h3 class="pad-t-20">SEMI FINALS</h3>
+        <span class="datefixture">27 JAN 2019 (2<sup>nd</sup> Leg)</span>
+        <div class="match-fixture-single ">
+
+          <div class="home-team"><p>Town Team</p></div>
+          <div class="away-team"><p>Thonikadav</p></div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="match-fixture-single ">
+         <div class="home-team"><p>Albatrozz</p></div>
+         <div class="away-team"><p>Sulthans</p></div>
+         <div class="clear"></div>
+       </div>
+
+       <!-- <h3 class="pad-t-20">Third-Place Play-off</h3>
+       <span class="datefixture">Second-Leg</span>
+       <div class="match-fixture-single ">
+        <div class="home-team"><p>S.Final los 1</p></div>
+        <div class="away-team"><p>S.Final los 2</p></div>
+        <div class="clear"></div>
+      </div> -->
+
+
+      <h3 class="pad-t-20"> FINAL</h3>
+      <span class="datefixture">MANGOL LEAGUE</span>
+      <div class="match-fixture-single " style="padding: 15px 0">
+        <div class="home-team"><p>S.Final Win.1</p></div>
+        <div class="away-team"><p>S.Final Win.2</p></div>
+        <div class="clear"></div>
+      </div>
+
+    </div>
+
+
+
+    <div class="sponsors">
+      <h5 class="">Sponsored By</h5>
+      <img src="images/sponsors.png" />
+    </div>
+  </div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131029280-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131029280-1');
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/anime.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+      //PAGE LOADER//
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("body").addClass("loaded");
+        }, 1800);
+      });
+    </script>
+  </body>
+  </html>
